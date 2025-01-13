@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c4449e9d25914925876d1ec592e82941</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="e5530b24-9f26-4623-8d53-4391cea8f9f4" class="cell markdown">
+<h1 id="ie582-fall24-project-bogazici-university-fall-2024">IE582 FALL24
+PROJECT BOGAZICI UNIVERSITY FALL 2024</h1>
+</div>
+<div id="dd9fad07-074e-4db1-82f0-4b4eea519339" class="cell markdown">
+<h5 id="lea-michels-2024690336">Lea Michels 2024690336</h5>
+<h5 id="hannes-knieke-2024690333">Hannes Knieke 2024690333</h5>
+<h5 id="fatih-akyıldız-2019402162">Fatih Akyıldız 2019402162</h5>
+</div>
+<div id="0fab89a6-f688-43ad-87bd-8358e09f38ff" class="cell markdown">
+<h1 id="1-introduction">1. INTRODUCTION</h1>
+</div>
+<div id="29bea9a5-7e76-4806-9cf7-96b50a7fedbe" class="cell markdown">
+<h3 id="problem-description">Problem Description:</h3>
+<p>The objective of this project is to develop a live betting strategy
+for soccer matches using provided match data, including in-game
+statistics and odds. The task requires identifying a single optimal time
+instant during a game to make a prediction about the match outcome—home
+win, draw, or away win—and decide whether to bet or take no action. Once
+a decision is made, no further revisions or additional predictions can
+be made for that match. This mimics real-world betting conditions where
+future data is inaccessible at the time of decision-making.</p>
+<p>Key constraints and goals:</p>
+<p>-Single decision per match at a specific time instant.</p>
+<p>-Decisions must be based solely on data available up to that time
+point.</p>
+<p>-Avoid forward-seeing by not using future information.</p>
+<p>-Performance measures include accuracy (proportion of correct
+predictions) and return (cumulative profit/loss based on betting
+odds)</p>
+</div>
+<div id="c2fc6a3e-3d15-44ef-b48e-5a8891a88a72" class="cell markdown">
+<h3 id="summary-of-proposed-approach">Summary of Proposed Approach:</h3>
+<p>Data Preprocessing:</p>
+<p>Adjusted minute values by adding 45 minutes for second-half events to
+align with full match time and it is hard for models to capture halftime
+feature with 1st-half and 2nd-half values.</p>
+<p>Filled missing values using forward-fill for columns representing
+cumulative match stats and zeros where applicable.</p>
+<p>Feature Manipulation:</p>
+<ul>
+<li><p>We normalized the percantage columns and bookmakers
+odds(previously done in hw2)</p></li>
+<li><p>Also identified the cumulative yet continous features and
+normalize it also to get it learnt better by models we used.</p></li>
+<li><p>finally created a dataFrame with only relecant columns that we
+will use for prediction purposes.</p></li>
+</ul>
+<p>Model Training:</p>
+<p>-Three models were used: XGBoost, GLM (L1-regularized), and Random
+Forest.</p>
+<p>-Hyperparameter tuning was performed using GridSearchCV to optimize
+accuracy and find optimal parameters for each model as we discussed in
+lectures.</p>
+<p>-After training models with parameters tuned and cross-validated. We
+proceed to brainstorm on how to construct a algorithm.</p>
+<p>Live Betting Strategy:</p>
+<p>-For each match, iterated over available minutes (using the available
+minute up to that minute) and made a prediction when confidence exceeded
+a threshold.</p>
+<p>-If no confident prediction was made during the match, the decision
+was “no action”.</p>
+<p>-Odds from the original data were used to compute cumulative returns
+for bets placed.</p>
+<p>-Introduced a cutoff minute (e.g., 90th minute) to experiment how
+constraining last-minute decisions affect our strategy.</p>
+<p>-Incremented confidence threshold slightly as time progressed to
+favor early predictions where odds are relatively more profitable.</p>
+</div>
+<div id="9a0ced3d-e16f-4e1d-83e1-268c1b5030f7" class="cell markdown">
+<h3 id="descriptive-analysis-of-the-match-data">Descriptive Analysis of
+the Match Data</h3>
+<p>Match events: goals, corners, and successful passes..... for both
+home and away teams. Metrics are cumulative.</p>
+<p>Team Performance stats: ball possession %, accurate crosses, shots on
+target, etc., indicate the performance of each team during the
+match.</p>
+<p>Betting Odds: The dataset includes live odds for three outcomes: 1
+(Home Win) 2 (Away Win) X (Draw)</p>
+<p>we observed until a event occur or any team performance stat
+initialize values of stats come up to be missing making it suitable for
+forward filling.</p>
+</div>
+<div id="49af753a-e225-4810-87da-07f27c787add" class="cell markdown">
+<h1 id="2-related-literature">2. Related Literature</h1>
+</div>
+<div id="84ba4b37-334b-4eaf-b053-d140dd5aaa6c" class="cell markdown">
+<p>Our main workflow was built regarding to material we covered in
+lectures. We tried to imply techniques delivered in class material.
+Besides that we also search relevant studies to finalize our decision
+and workflow.</p>
+<ul>
+<li><p>"Improving Sports Outcome Prediction Process Using Integrating
+Adaptive Weighted Features and Machine Learning Techniques" by Chi-Jie
+Lu, Tian-Shyug Lee, Chien-Chih Wang, Wei-Jen Chen[1] proposed Random
+Forests and XGBoost are ensemble learning methods that have been
+effectively applied in sports outcome predictions. For instance, a study
+on NBA game outcome prediction integrated data mining techniques,
+including XGBoost, to forecast game scores, demonstrating the model's
+efficacy in handling complex, high-dimensional data. Also we saw tgat
+penalized regression models, such as Lasso (L1 regularization), are
+employed to manage multicollinearity and enhance predictive accuracy by
+imposing penalties on the size of coefficients. This technique is
+particularly useful in sports betting models where numerous correlated
+predictors are present it says.</p></li>
+<li><p>"A Systematic Review of Machine Learning in Sports Betting:
+Techniques, Challenges, and Future Directions" by René Manassé Galekwa,
+Jean Marie Tshimula, Etienne Gael Tajeuna, Kyamakya Kyandoghere[2]
+showed us feature normalization is a critical preprocessing step in
+machine learning models to ensure that each feature contributes equally
+to the model's performance. In sports betting, where data can vary
+widely in scale, normalization facilitates the convergence of algorithms
+and improves predictive accuracy. It highlights the importance of data
+preprocessing, including normalization, in developing effective
+predictive models.</p></li>
+</ul>
+</div>
+<div id="ceeeca6a-cd05-4b83-b71b-f2ec8754dc85" class="cell markdown">
+<h1 id="3-approach">3. APPROACH</h1>
+</div>
+<div id="fc659f80-6f1a-4219-b592-1c834d18a3c2" class="cell markdown">
+<p>Our initial priority was to create a roadmap. After reviewing the
+topics covered in lectures and relevant research papers, we outlined the
+following roadmap for our approach:</p>
+<ul>
+<li>Review the data</li>
+<li>Manipulate the data</li>
+<li>Decide on features useful for prediction</li>
+<li>Extract features</li>
+<li>Propose a model and perform hyperparameter tuning with
+cross-validation for training and tuning purposes</li>
+<li>Propose a live betting algorithm to decide whether to place a bet or
+not</li>
+<li>Evaluate our betting strategy within the scope of the three proposed
+models</li>
+</ul>
+</div>
+<div id="57f07217-5e61-4532-90d4-30e3deb6d201" class="cell markdown">
+<h4 id="preprocessing-and-feature-manipulation">Preprocessing and
+Feature Manipulation</h4>
+<p>We began manipulating the data by sorting it based on fixture_id,
+halftime, minute, and second values. Upon further examination, we
+observed that the features were cumulative and that some features had
+missing values until the first occurrence of an event was recorded. To
+address this, we first filled missing values using forward fill, and the
+remaining missing values were filled with 0.</p>
+<p>Next, using the halftime column, we made the minute column continuous
+across each match to enhance the models' learning process. As we did in
+HW2, we normalized the odds and also normalized the following
+percentage-based columns:</p>
+<ul>
+<li>'Ball Possession % - away'</li>
+<li>'Ball Possession % - home'</li>
+<li>'Successful Passes Percentage - away'</li>
+<li>'Successful Passes Percentage - home'</li>
+</ul>
+<p>Subsequently, we printed the continuous features representing game
+statistics and normalized them. The dataset was then split into training
+and test sets as specified in the project description. We encoded the
+result column and separated the data into X_train, Y_train, X_test, and
+Y_test for model training and evaluation.</p>
+</div>
+<div id="b93add8c-546f-419c-b1aa-9c7de8a2de0b" class="cell markdown">
+<h4 id="model-selection--parameter-tuning">model selection &amp;
+parameter tuning</h4>
+<ol>
+<li>We selected three distinct types of models to capture different
+aspects of the data:</li>
+</ol>
+<p>XGBoost: Chosen for its ability to model complex feature interactions
+and handle non-linear relationships effectively.</p>
+<p>GLM with L1 Regularization: Selected for its simplicity,
+interpretability, and feature selection capabilities through L1
+penalties.</p>
+<p>Random Forest: A robust ensemble method known for reducing
+overfitting by averaging multiple decision trees.</p>
+<ol>
+<li>To achieve optimal model performance, we performed hyperparameter
+tuning using GridSearchCV with cross-validation. Here’s how we applied
+this process:</li>
+</ol>
+<p>XGBoost: We explored parameters such as the number of estimators,
+learning rate, max depth of trees, and regularization terms. Grid search
+was performed with 128 parameter combinations across 3-fold
+cross-validation (384 total fits).</p>
+<p>GLM with L1 Regularization: We tuned the regularization strength (C)
+and penalty type (l1 or l2). The parameter search space was kept compact
+with 10 combinations to avoid excessive runtime while still covering key
+options. This model underwent 3-fold cross-validation with 30 total
+fits.</p>
+<p>Random Forest: We tuned parameters such as the number of estimators,
+max tree depth, and minimum number of samples for splits and leaf nodes.
+The grid search for Random Forest included 24 combinations with 72 total
+fits.</p>
+<ol>
+<li>Cross-Validation Process:</li>
+</ol>
+<p>For each model, we performed 3-fold cross-validation to:</p>
+<p>Ensure robust evaluation by splitting the training set into different
+folds. Train the model on two folds and validate it on the third.
+Calculate the mean cross-validation score to assess model performance
+across different subsets of data.</p>
+<p>The best parameters for each model were selected based on the highest
+cross-validation score:</p>
+<p>XGBoost: Parameters such as learning_rate, max_depth, and subsample
+were tuned to balance between underfitting and overfitting.</p>
+<p>GLM: The C parameter determined the strength of regularization to
+prevent the model from overfitting.</p>
+<p>Random Forest: Parameters such as max_depth, min_samples_split, and
+n_estimators helped control model complexity and improve
+generalization.</p>
+</div>
+<div id="585c2aab-48e7-4e61-9ac9-9311be009dd0" class="cell code"
+data-trusted="true">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> XGBClassifier(use_label_encoder<span class="op">=</span><span class="va">False</span>, eval_metric<span class="op">=</span><span class="st">&#39;mlogloss&#39;</span>)  </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Updated parameter grid for XGBoost</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>param_grid_xgb <span class="op">=</span> {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;n_estimators&#39;</span>: [<span class="dv">100</span>, <span class="dv">150</span>],  <span class="co"># Number of trees</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;learning_rate&#39;</span>: [<span class="fl">0.05</span>, <span class="fl">0.1</span>],  <span class="co"># Shrinkage step size</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;max_depth&#39;</span>: [<span class="dv">3</span>, <span class="dv">5</span>],  <span class="co"># Tree depth to control overfitting</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;min_child_weight&#39;</span>: [<span class="dv">1</span>, <span class="dv">5</span>],  <span class="co"># Minimum sum of instance weights for a child node</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;gamma&#39;</span>: [<span class="dv">0</span>, <span class="fl">0.1</span>],  <span class="co"># Minimum loss reduction required to make a further split</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;subsample&#39;</span>: [<span class="fl">0.8</span>, <span class="fl">1.0</span>],  <span class="co"># Fraction of samples used for training each tree</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;colsample_bytree&#39;</span>: [<span class="fl">0.8</span>, <span class="fl">1.0</span>],  <span class="co"># Fraction of features used for each tree</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># GridSearchCV with XGBoost</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>grid_search_xgb <span class="op">=</span> GridSearchCV(</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    estimator<span class="op">=</span>model,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    param_grid<span class="op">=</span>param_grid_xgb,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span><span class="dv">3</span>,  <span class="co"># 3-fold cross-validation</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    n_jobs<span class="op">=-</span><span class="dv">1</span>,  <span class="co"># Use all CPU cores</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    verbose<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if the sample size doesn&#39;t exceed available data</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>sample_size <span class="op">=</span> <span class="bu">min</span>(<span class="dv">20000</span>, <span class="bu">len</span>(X_train))</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>X_train_sampled <span class="op">=</span> X_train.sample(n<span class="op">=</span>sample_size, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>y_train_sampled <span class="op">=</span> y_train.loc[X_train_sampled.index]</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform the Grid Search</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>grid_search_xgb.fit(X_train_sampled, y_train_sampled)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the best model, parameters, and score</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>best_model_xgb <span class="op">=</span> grid_search_xgb.best_estimator_</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>best_params_xgb <span class="op">=</span> grid_search_xgb.best_params_</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>best_score_xgb <span class="op">=</span> grid_search_xgb.best_score_</span></code></pre></div>
+</div>
+<div id="acd0b8c6-e745-4e5a-b853-08be6e660665" class="cell code"
+data-trusted="true">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  Logistic Regression (GLM) model with regularization</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>model_glm <span class="op">=</span> LogisticRegression(multi_class<span class="op">=</span><span class="st">&#39;multinomial&#39;</span>, solver<span class="op">=</span><span class="st">&#39;saga&#39;</span>, max_iter<span class="op">=</span><span class="dv">1000</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Hyperparameter grid for regularization strength</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>param_grid_glm <span class="op">=</span> {</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;C&#39;</span>: [<span class="fl">0.01</span>, <span class="fl">0.1</span>, <span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">100</span>],  <span class="co"># Regularization strength (inverse of lambda)</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;penalty&#39;</span>: [<span class="st">&#39;l1&#39;</span>, <span class="st">&#39;l2&#39;</span>],  <span class="co"># L1 for Lasso, L2 for Ridge regularization</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Grid search for GLM</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>grid_search_glm <span class="op">=</span> GridSearchCV(estimator<span class="op">=</span>model_glm, param_grid<span class="op">=</span>param_grid_glm, cv<span class="op">=</span><span class="dv">3</span>, n_jobs<span class="op">=-</span><span class="dv">1</span>, verbose<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>grid_search_glm.fit(X_train, y_train)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Get best model, parameters, and score</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>best_model_glm <span class="op">=</span> grid_search_glm.best_estimator_</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>best_params_glm <span class="op">=</span> grid_search_glm.best_params_</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>best_score_glm <span class="op">=</span> grid_search_glm.best_score_</span></code></pre></div>
+</div>
+<div id="d9bbeedb-099a-40db-abc1-84ccbba3f115" class="cell code"
+data-trusted="true">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Random Forest Classifier</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>model_rf <span class="op">=</span> RandomForestClassifier(random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Updated hyperparameter grid</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>param_grid_rf <span class="op">=</span> {</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;n_estimators&#39;</span>: [<span class="dv">100</span>, <span class="dv">150</span>],  <span class="co"># Number of trees</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;max_depth&#39;</span>: [<span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>],  <span class="co"># Focus on key depths</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;min_samples_split&#39;</span>: [<span class="dv">2</span>, <span class="dv">5</span>],  <span class="co"># Minimum samples required for split</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;min_samples_leaf&#39;</span>: [<span class="dv">1</span>, <span class="dv">2</span>],  <span class="co"># Minimum samples per leaf</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;bootstrap&#39;</span>: [<span class="va">True</span>]  <span class="co"># Only test bootstrap=True to reduce combinations</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># GridSearchCV for Random Forest</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>grid_search_rf <span class="op">=</span> GridSearchCV(</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    estimator<span class="op">=</span>model_rf,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    param_grid<span class="op">=</span>param_grid_rf,</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span><span class="dv">3</span>,  <span class="co"># 3-fold cross-validation</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    n_jobs<span class="op">=</span><span class="dv">4</span>,  <span class="co"># Use 4 cores to balance load</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    verbose<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit with reduced grid</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>grid_search_rf.fit(X_train, y_train)</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+</div>
+<div id="b0f2187d-a384-41bd-bc5a-362a684dd78b" class="cell markdown">
+<h3
+id="algorithm-for-deciding-single-optimal-time-point-for-betting-decision">Algorithm
+for deciding single optimal time point for betting decision</h3>
+<ol>
+<li>Iterative Decision Process: For each match, we iterated through the
+available data at each minute, simulating the flow of a live soccer
+match. At each time point, the models were asked to make a prediction
+based on the features up to that minute.</li>
+<li>Confidence Threshold for Decision-Making: A decision to place a bet
+was made only when the predicted class probability exceeded a predefined
+confidence threshold (e.g., 0.7). This ensured that bets were placed
+only when the model was confident enough about its prediction. As the
+minute passes, the confidence threshold is adjusted by a coefficient
+proportional to time, gradually increasing the threshold, discouraging
+bets in late-game moments unless the confidence is very high.</li>
+<li>Cutoff Time: A cutoff minute (e.g., 90th minute) ensures that no
+decisions are made after a specific point, preventing last-minute
+reactive bets.</li>
+<li>“No Action” Decision: If no confident prediction is made before the
+cutoff, the strategy outputs “no action” for that match.</li>
+</ol>
+</div>
+<div id="f8c9908e-a6b9-484f-9654-933b7d3b9084" class="cell code"
+data-trusted="true">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> revised_betting_strategy(model, test_df, initial_confidence_threshold<span class="op">=</span><span class="fl">0.7</span>, cutoff_minute<span class="op">=</span><span class="dv">90</span>, confidence_step<span class="op">=</span><span class="fl">0.01</span>):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    decisions <span class="op">=</span> {}</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> fixture_id <span class="kw">in</span> test_df[<span class="st">&#39;fixture_id&#39;</span>].unique():</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Filter data for the specific fixture and sort by time</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        fixture_data <span class="op">=</span> test_df[test_df[<span class="st">&#39;fixture_id&#39;</span>] <span class="op">==</span> fixture_id].sort_values(by<span class="op">=</span><span class="st">&#39;minute&#39;</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        current_confidence_threshold <span class="op">=</span> initial_confidence_threshold</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> _, row <span class="kw">in</span> fixture_data.iterrows():</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> row[<span class="st">&#39;minute&#39;</span>] <span class="op">&gt;</span> cutoff_minute:</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                <span class="cf">break</span>  <span class="co"># Do not bet after cutoff minute</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Extract features up to the current minute</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>            X_single <span class="op">=</span> row.drop([<span class="st">&#39;result&#39;</span>, <span class="st">&#39;fixture_id&#39;</span>, <span class="st">&#39;encoded_result&#39;</span>]).values.reshape(<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>            pred_proba <span class="op">=</span> model.predict_proba(X_single)[<span class="dv">0</span>]  <span class="co"># Get probability predictions</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>            pred_class <span class="op">=</span> model.classes_[pred_proba.argmax()]  <span class="co"># Get predicted class (1, 2, or X)</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>            max_proba <span class="op">=</span> pred_proba.<span class="bu">max</span>()  <span class="co"># Maximum probability (confidence)</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Adjust confidence threshold slightly as the game progresses</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>            current_confidence_threshold <span class="op">+=</span> confidence_step <span class="op">*</span> (row[<span class="st">&#39;minute&#39;</span>] <span class="op">/</span> <span class="dv">90</span>)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>            <span class="co"># If confidence exceeds the adjusted threshold, make a prediction</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> max_proba <span class="op">&gt;=</span> current_confidence_threshold:</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>                decisions[fixture_id] <span class="op">=</span> {</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&#39;minute&#39;</span>: row[<span class="st">&#39;minute&#39;</span>],</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&#39;prediction&#39;</span>: label_encoder.inverse_transform([pred_class])[<span class="dv">0</span>],</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&#39;confidence&#39;</span>: max_proba</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>                }</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>                <span class="cf">break</span>  <span class="co"># Stop after making the first confident decision</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>        <span class="co"># If no confident prediction was made during the entire match</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> fixture_id <span class="kw">not</span> <span class="kw">in</span> decisions:</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>            decisions[fixture_id] <span class="op">=</span> {</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;minute&#39;</span>: <span class="va">None</span>,</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;prediction&#39;</span>: <span class="st">&quot;no action&quot;</span>,</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;confidence&#39;</span>: <span class="va">None</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pd.DataFrame.from_dict(decisions, orient<span class="op">=</span><span class="st">&#39;index&#39;</span>)</span></code></pre></div>
+</div>
+<div id="9dcad34d-38ff-4741-9d3c-4e0ff18e90dd" class="cell markdown">
+<h3 id="algorithm-to-evaulate-performances">Algorithm to evaulate
+performances</h3>
+<ol>
+<li>Iterating Through Bets: For each match (fixture_id), the algorithm
+checks whether a model placed a bet and skips if the decision is “no
+action”.</li>
+<li>Outcome Comparison: The true result for the match (home win, away
+win, or draw) is compared to the model’s predicted result. If the
+prediction matches the actual outcome: The model gains units equal to
+the corresponding betting odds (betting 1 unit). If the prediction is
+incorrect: The model loses 1 unit.</li>
+<li>Odds Lookup: The betting odds at the exact minute when the bet was
+placed are fetched from the match_df. The odds for home win (1), away
+win (2), and draw (X) are retrieved and used for return
+calculations.</li>
+<li>Metrics Computed: Total Bets: Number of matches where the model
+placed a bet. Correct Bets: Number of bets where the predicted outcome
+was correct. Accuracy: Ratio of correct bets to total bets. Cumulative
+Return: Total units gained or lost based on the placed bets.</li>
+</ol>
+</div>
+<div id="ea3d2494-aca7-410e-85ea-85c6764f33b2" class="cell code"
+data-trusted="true">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate_strategy_with_odds(decisions_df, true_results, match_df):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    total_bets <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    correct_bets <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    cumulative_return <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> fixture_id, decision <span class="kw">in</span> decisions_df.iterrows():</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        prediction <span class="op">=</span> decision[<span class="st">&#39;prediction&#39;</span>]</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Skip if &quot;no action&quot;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> prediction <span class="op">==</span> <span class="st">&quot;no action&quot;</span>:</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        true_result <span class="op">=</span> true_results.get(fixture_id)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Filter for the specific fixture and minute to get the odds</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        odds_row <span class="op">=</span> match_df[</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>            (match_df[<span class="st">&#39;fixture_id&#39;</span>] <span class="op">==</span> fixture_id) <span class="op">&amp;</span> (match_df[<span class="st">&#39;minute&#39;</span>] <span class="op">==</span> decision[<span class="st">&#39;minute&#39;</span>])</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        ].iloc[<span class="dv">0</span>]</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Get the appropriate odds based on the prediction</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> prediction <span class="op">==</span> <span class="st">&quot;1&quot;</span>:</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>            odd <span class="op">=</span> odds_row[<span class="st">&#39;1&#39;</span>]  <span class="co"># Home win odds</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> prediction <span class="op">==</span> <span class="st">&quot;2&quot;</span>:</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>            odd <span class="op">=</span> odds_row[<span class="st">&#39;2&#39;</span>]  <span class="co"># Away win odds</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>            odd <span class="op">=</span> odds_row[<span class="st">&#39;X&#39;</span>]  <span class="co"># Draw odds</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>        total_bets <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> prediction <span class="op">==</span> true_result:</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>            correct_bets <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>            cumulative_return <span class="op">+=</span> odd  <span class="co"># Gain units based on odds if correct</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>            cumulative_return <span class="op">-=</span> <span class="dv">1</span>  <span class="co"># Lose 1 unit if incorrect</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>    accuracy <span class="op">=</span> correct_bets <span class="op">/</span> total_bets <span class="cf">if</span> total_bets <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Total Bets&#39;</span>: total_bets,</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Correct Bets&#39;</span>: correct_bets,</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Accuracy&#39;</span>: accuracy,</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Cumulative Return&#39;</span>: cumulative_return</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
+</div>
+<div id="f320c316-e3a0-4c3e-b3e1-0387c1162445" class="cell markdown">
+<h1 id="4-results">4. RESULTS</h1>
+</div>
+<div id="7d41914a-f88f-4698-a156-3e720039703d" class="cell markdown">
+<p><img
+src="vertopal_a2d69754447d4a97a01e0f1f2e1a1d92/b57c5e60-3b7f-4caf-9a3e-0da44feeaa83.png"
+alt="Screenshot 2025-01-13 at 19.28.16.png" /></p>
+</div>
+<div id="31aa377c-215a-4745-88dd-3aa0a1e8f486" class="cell markdown">
+<ol>
+<li>XGBoost achieved the highest validation score (0.96) during
+training, indicating strong performance on the training folds. However,
+its test accuracy dropped significantly to 0.66, suggesting overfitting.
+This overfitting likely occurred due to the complexity of the model, as
+XGBoost is prone to capturing noise in the training data. In the betting
+strategy, XGBoost placed many bets (84) but had a relatively modest
+accuracy of 64%, resulting in inconsistent returns. Despite having the
+highest cumulative return among the models, this performance is unstable
+due to the large number of bets and the model's struggle with predicting
+draws (precision: 0.44).</li>
+<li>The GLM performed consistently between the validation (0.65) and
+test set (0.68), indicating good generalization. The regularization (L1)
+helped prevent overfitting by shrinking irrelevant feature coefficients.
+However, the GLM model struggled to identify draws (precision: 0.47),
+impacting its overall predictive capability. In the betting strategy, it
+placed fewer bets (55) but maintained higher accuracy (78%), showing
+that it was cautious and often correct in its predictions. Despite this,
+the returns were lower than XGBoost due to slightly fewer high-odds bets
+but profitability is better.</li>
+<li>Random Forest performed consistently between validation (0.64) and
+test set (0.68), showing stability and robustness. It placed the fewest
+bets (42) but had the highest betting accuracy (93%), indicating its
+ability to make highly confident, accurate predictions. The Random
+Forest’s ensemble approach reduced variance, avoiding large errors and
+overfitting, which contributed to its reletively strong performance in
+the live betting strategy with being the only profitable model.</li>
+</ol>
+</div>
+<div id="e81d4719-3431-43b5-a670-160a5a322723" class="cell markdown">
+<p>XGBoost performed the worst in this context due to overfitting and
+sensitivity to hyperparameters despite its high validation score (0.96).
+While XGBoost is highly effective at modeling complex non-linear
+relationships, its complexity can lead to memorizing training patterns
+rather than generalizing to unseen data—especially in dynamic, noisy
+datasets like live match statistics. The large number of estimators,
+deep trees, and aggressive learning rate contributed to overfitting, as
+evidenced by the significant drop in test accuracy (0.66) compared to
+the validation score. Additionally, XGBoost struggled with predicting
+the draw outcome (precision: 0.44), likely due to class imbalance in the
+data and the model's bias toward more frequent outcomes (home and away
+wins). Its large number of bets (84) also increased exposure to
+variance, amplifying the impact of incorrect predictions. In contrast,
+simpler models like GLM and Random Forest imposed better regularization
+and decision thresholds, leading to more consistent and profitable
+decisions.</p>
+</div>
+<div id="d0e2779d-f527-4bfa-ae1c-66104ac839dc" class="cell markdown">
+<h1 id="5-conclusions-and-future-work">5. CONCLUSIONS AND FUTURE
+WORK</h1>
+</div>
+<div id="93e2fd96-f412-43eb-8c44-034941a14787" class="cell markdown">
+<p>In this project, we developed and evaluated a live betting strategy
+using three machine learning models: XGBoost, GLM with L1
+Regularization, and Random Forest. Our aim was to combine our knowledge
+gained in lectures with a real-life challange. Our approach included
+data preprocessing, feature normalization, and hyperparameter tuning. We
+practiced implementing the ML approaches we learnt in lectures. We
+assesed how good we can perform and imply the approaches were taught
+during the semester and also observed our flaws during the model
+building processes.</p>
+<p>To further improve the performance of our live betting strategy, we
+propose several extensions in three key areas: training and testing the
+models, enhancing the dataset, and improving decision rules. These
+enhancements aim to make the models more efficient, precise, and capable
+of generalizing to unseen match scenarios and make profitable bettin
+decision.</p>
+</div>
+<div id="6e0fb2b4-d463-4e7e-9ab8-2618fc558560" class="cell markdown">
+<ol>
+<li>Imporvements on trainin and testing the models</li>
+</ol>
+<p>Efficient Hyperparameter Tuning: Replace traditional grid search with
+Bayesian Optimization or Random Search to reduce computation time by
+exploring the parameter space more effectively.</p>
+<p>Cross-Validation with Stratification: Perform stratified K-fold
+cross-validation to ensure that each fold contains a balanced
+distribution of match outcomes (home win, draw, away win), reducing the
+risk of training bias.</p>
+<p>Handling Class Imbalance: Implement class weights in the loss
+function or use resampling techniques (e.g., SMOTE) to balance the
+dataset and improve the model’s ability to predict rare events like
+draws.</p>
+<p>Alternative Models: Experiment with models like: CatBoost: Handles
+categorical variables efficiently and is robust to overfitting. Neural
+Networks (LSTM/GRU): Sequential models can capture time-series
+dependencies, making them ideal for live event-based data. Gradient
+Boosting with Early Stopping: Apply early stopping during training to
+prevent overfitting and identify the optimal number of boosting
+iterations.</p>
+</div>
+<div id="8ac9b375-d9cb-4607-9d2e-2d6e6f9e511c" class="cell markdown">
+<ol>
+<li>Enhancing the Dataset Expanding and refining the input data can
+significantly improve model performance by providing richer contextual
+information:</li>
+</ol>
+<p>Player-Level Metrics: Incorporate real-time player data such as:
+Player ratings, passing accuracy, shots on target, and defensive
+actions. Injury reports and substitution events to account for player
+impact on the game. Along with starting 11 data</p>
+<p>External Data Sources: Fetch additional data from open sports APIs
+(e.g., SofaScore or Opta) to enrich the dataset with live performance
+indicators and historical trends</p>
+</div>
+<div id="e596ed84-6db8-44ff-85b7-35d3055396ef" class="cell markdown">
+<h1 id="6-link-to-our-code">6. LINK TO OUR CODE</h1>
+<p><a
+href="https://github.com/fbaakyildiz/IE582TERMPROJECT/blob/main/WORK.ipynb">CODE</a></p>
+</div>
+<div id="17552ed8-c067-4927-849c-64d32c46ef4e" class="cell markdown">
+<h1 id="7-references">7. REFERENCES</h1>
+<p>[1] Lu, C. J., Lee, T. S., Wang, C. C., &amp; Chen, W. J. (2021).
+"Improving sports outcome prediction process using integrating adaptive
+weighted features and machine learning techniques". Entropy, 23(4), 477.
+[<a href="https://www.mdpi.com/1099-4300/23/4/477"
+class="uri">https://www.mdpi.com/1099-4300/23/4/477</a>]</p>
+<p>[2] Galekwa, R. M., Tshimula, J. M., Tajeuna, E. G., &amp;
+Kyandoghere, K. (2024). A systematic review of machine learning in
+sports betting: Techniques, challenges, and future directions. arXiv
+preprint. [<a href="https://arxiv.org/abs/2410.21484"
+class="uri">https://arxiv.org/abs/2410.21484</a>]</p>
+</div>
+<div id="70b1bb41-1145-4f3f-bba4-87b410462769" class="cell code"
+data-trusted="true">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
